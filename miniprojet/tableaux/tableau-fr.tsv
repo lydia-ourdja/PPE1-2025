@@ -1,0 +1,11 @@
+num	URL	HTTP_Code	Encodage	nb_mots
+1	https://fr.wikipedia.org/wiki/Robot	200	UTF-8	5176
+2	https://fr.wikipedia.org/wiki/Robot_de_cuisine	200	UTF-8	1259
+3	fr.wikipedia.org/wiki/Robot_d%27indexation	301	inconnu	0
+4	https://fr.wikipedia.org/wiki/Bot_informatique	200	UTF-8	2542
+5	https://fr.wikipedia.org/wiki/Atlas_(robot)	200	UTF-8	1259
+6	https://roboty.magistry.fr	inconnu	inconnu	0
+7	https://fr.wikipedia.org/wiki/Robot_(Leonard_de_Vinci)	404	UTF-8	420
+8	https://fr.wiktionary.org/wiki/robot	429	utf-8	231
+9	https://fr.wikipedia.org/wiki/Protocole_d%27exclusion_des_robots	429	utf-8	231
+10	https://fr.wikipedia.org/wiki/Robotique	429	utf-8	231
