@@ -13,11 +13,16 @@ echo "<!DOCTYPE html>" > "$sortie"
 echo "<html lang='fr'>" >> "$sortie"
 echo "<head>" >> "$sortie"
 echo "  <meta charset='UTF-8'>" >> "$sortie"
+echo "  <meta name='viewport' content='width=device-width, initial-scale=1.0'>" >> "$sortie"
 echo "  <title>Résultats des URLs</title>" >> "$sortie"
+echo "  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css'>" >> "$sortie"
 echo "</head>" >> "$sortie"
 echo "<body>" >> "$sortie"
-echo "<h2>Analyse des URLs</h2>" >> "$sortie"
-echo "<table>" >> "$sortie"
+echo "<section class='section'>" >> "$sortie"
+echo "<div class='container'>" >> "$sortie"
+echo "<h1 class='title is-2 has-text-centered'>Mini projet: </h1>">>"$sortie"
+echo "<h2 class='title is-4'>Analyse des URLs</h2>" >> "$sortie"
+echo "<table class='table is-striped is-hoverable is-fullwidth is-bordered is-narrow'>" >> "$sortie"
 echo "<tr><th>Num</th><th>URL</th><th>HTTP Code</th><th>Encodage</th><th>Nombre de mots</th></tr>" >> "$sortie"
 
 
@@ -57,8 +62,10 @@ done < "$fichiertxt"
 # Fin du HTML
 
 echo "</table>" >> "$sortie"
-echo "<p>Résultats générés le $(date)</p>" >> "$sortie"
+echo "</div>" >> "$sortie"   # fermeture du container
+echo "</section>" >> "$sortie"   # fermeture de la section
 echo "</body>" >> "$sortie"
 echo "</html>" >> "$sortie"
+
 
 echo "Résultats enregistrés dans $sortie"
